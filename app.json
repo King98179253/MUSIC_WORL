@@ -1,9 +1,9 @@
 {
     "name": "NobitaMusic",
-    "logo": "https://te.legra.ph/file/1a85ce935e13e92706907.jpg",
+    "logo": "https://te.legra.ph/file/7d5d4e1036a43bbb92822.jpg",
     "description": "An Advanced Premium Music Bot For Telegram Groups VC.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/khushbuxabhi/SuperMusic",
+    "repository": "https://github.com/NOBITAXDD/MUSIC_WORLD",
     "stack": "container",
     "env": {
         "API_ID": {
