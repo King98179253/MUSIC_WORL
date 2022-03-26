@@ -135,18 +135,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "** 𝙸 𝙰𝙼 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝙿𝙻𝙰𝚈 𝙱𝙾𝚂𝚂...**")
+                        message.chat.id, "**🥳 𝙸 𝙰𝙼 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝙿𝙻𝙰𝚈 𝙱𝙾𝚂𝚂...**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**🎸 𝙿𝙻𝙰𝙴𝙰𝚂𝙴 𝙼𝙰𝙽𝚄𝙰𝙻𝙻𝚈 𝙰𝙳𝙳 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝚁 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 :- @Nobi_xxd** ")
+                        f"**🎸 𝙿𝙻𝙰𝙴𝙰𝚂𝙴 𝙼𝙰𝙽𝚄𝙰𝙻𝙻𝚈 𝙰𝙳𝙳 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝚁 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 :- @Nobi_xxd..**")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**🎸 𝐏𝐥𝐚𝐞𝐚𝐬𝐞 ❤️ 𝐌𝐚𝐧𝐮𝐚𝐥𝐥𝐲 🥀 𝐀𝐝𝐝 💫 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 😔 𝐎𝐫 🎸 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ❤️ 𝐓𝐨 : @Itz_VeNom_xD 🥀 ...*")
+            f"**🎸 𝙿𝙻𝙰𝙴𝚂𝚂𝙴 𝙼𝙰𝙽𝚄𝙰𝙻𝙻𝚈 𝙰𝙳𝙳 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝚁 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 : @Nobi_xxd..**")
         return
     
     audio = (
@@ -159,12 +159,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**💥 𝐏𝐥𝐚𝐲 🔊 𝐌𝐮𝐬𝐢𝐜 💿 𝐋𝐞𝐬𝐬 ⚡️\n🤟 𝐓𝐡𝐚𝐧⚡️ {DURATION_LIMIT} 💞 𝐌𝐢𝐧𝐮𝐭𝐞 ...**"
+                f"** 𝙿𝙻𝙰𝚈 𝙼𝚄𝚂𝙸𝙲 𝙻𝙴𝚂𝚂 ⚡️\n🤟 𝚃𝙷𝙰𝙽 ⚡️ {DURATION_LIMIT} 𝙼𝙸𝙽𝚄𝚃𝙴...**"
             )
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://te.legra.ph/file/1a85ce935e13e92706907.jpg"
+        thumb_name = "https://te.legra.ph/file/ea0a49d9aed8ed552b83f.jpg
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -173,7 +173,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="🤗 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ❤️",
                             url=f"https://t.me/AAPLI_YAARI")
 
                 ]
@@ -212,7 +212,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="🤗 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ❤️",
                             url=f"https://t.me/AAPLI_YAARI")
 
                 ]
