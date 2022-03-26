@@ -347,7 +347,7 @@ async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/1a85ce935e13e92706907.jpg", 
-                             caption="**💫 𝐍𝐎𝐁𝐈𝐓𝐀 🔈 𝐌𝐮𝐬𝐢𝐜🤞𝐍𝐨𝐰 🥀\n⏸ 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🌷 ...**"
+                             caption="**💫 𝙽𝙾𝙱𝙸𝚃𝙰 🔈 𝙼𝚄𝚂𝙸𝙲 𝙽𝙾𝚆 🥀\n⏸ 𝙿𝙻𝙰𝚈𝙸𝙽𝙶🌷 ...**"
     )
 
 
@@ -362,7 +362,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**💫 𝐍𝐎𝐁𝐈𝐓𝐀 💞 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 🔇\n🚫 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 🌷 ...**")
+        await message.reply_text("**💫 𝙽𝙾𝙱𝙸𝚃𝙰 𝙼𝚄𝚂𝙸𝙲 𝙽𝙾𝚃𝙷𝙸𝙽𝙶 🔇\n🚫 𝙿𝙻𝙰𝚈𝙸𝙽𝙶🌷 ...**")
     else:
         queues.task_done(chat_id)
         
@@ -381,7 +381,7 @@ async def skip(_, message: Message):
 
     await message.reply_photo(
                              photo="https://te.legra.ph/file/1a85ce935e13e92706907.jpg", 
-                             caption=f'**💥 𝐍𝐎𝐁𝐈𝐓𝐀 🔈 𝐌𝐮𝐬𝐢𝐜🤞𝐍𝐨𝐰 🥀\n⏩ 𝐒𝐤𝐢𝐩𝐩𝐞𝐝 🌷 ...**'
+                             caption=f'** 𝙽𝙾𝙱𝙸𝚃𝙰🔈 𝙼𝚄𝚂𝙸𝙲🤞𝙽𝙾𝚆 🥀\n⏩ 𝚂𝙺𝙸𝙿𝙿𝙴𝙳 🌷 ...**'
    ) 
 
 
@@ -397,7 +397,7 @@ async def stop(_, message: Message):
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/1a85ce935e13e92706907.jpg", 
-                             caption="**💥 𝐍𝐎𝐁𝐈𝐓𝐀 🔈 𝐌𝐮𝐬𝐢𝐜🤞𝐍𝐨𝐰 🥀\n❌ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 🌷 ...**"
+                             caption="** 𝙽𝙾𝙱𝙸𝚃𝙰 🔈 𝙼𝚄𝚂𝙸𝙲🤞𝙽𝙾𝚆 🥀\n❌ 𝚂𝚃𝙾𝙿𝙴𝙴𝙳🌷 ...**"
     )
 
 
