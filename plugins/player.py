@@ -221,14 +221,14 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://te.legra.ph/file/1a85ce935e13e92706907.jpg"
+            thumb_name = "https://te.legra.ph/file/ea0a49d9aed8ed552b83f.jpg
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="🤗 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ❤️",
                             url=f"https://t.me/AAPLI_YAARI")
 
                 ]
@@ -237,7 +237,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**💥 𝐏𝐥𝐚𝐲 🔊 𝐌𝐮𝐬𝐢𝐜 💿 𝐋𝐞𝐬𝐬 ⚡️\n🤟 𝐓𝐡𝐚𝐧⚡️ {DURATION_LIMIT} 💞 Ɱɩɳʋʈɘ ...**"
+                f"**𝙿𝙻𝙰𝚈 𝙼𝚄𝚂𝙸𝙲 𝙻𝙴𝚂𝚂 ⚡️\n🤟 𝚃𝙷𝙰𝙽⚡️ {DURATION_LIMIT} 𝙼𝙸𝙽𝚄𝚃𝙴...**"
             )
             return
         requested_by = message.from_user.first_name
@@ -246,7 +246,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**🤖 𝐆𝐢𝐯𝐞 🙃 𝐌𝐮𝐬𝐢𝐜 💿 𝐍𝐚𝐦𝐞 😍\n💞 𝐓𝐨 🔊 𝐏𝐥𝐚𝐲 🌷...**"
+                "**🤖 𝙶𝙸𝚅𝙴 🙃 𝙼𝚄𝚂𝙸𝙲 💿 𝙽𝙰𝙼𝙴 😍\n 𝚃𝙾 🔊 𝙿𝙻𝙰𝚈 ...**"
             )
         await lel.edit("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
         query = message.text.split(None, 1)[1]
@@ -273,7 +273,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**🔊 𝐌𝐮𝐬𝐢𝐜 😕 𝐍𝐨𝐭 📵 𝐅𝐨𝐮𝐧𝐝❗️\n💞 𝐓𝐫𝐲 ♨️ 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 🌷...**"
+                "**🔊 𝙼𝚄𝚂𝙸𝙲 😕 𝙽𝙾𝚃  📵 𝙵𝙾𝚄𝙽𝙳❗️\n 𝚃𝚁𝚈 ♨️ 𝙰𝙽𝙾𝚃𝙷𝙴𝚁 ...**"
             )
             print(str(e))
             return
@@ -282,7 +282,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="💥 Jøɩɳ Ɦɘɤɘ & Sʋƥƥøɤʈ 💞",
+                            text="🤗 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ❤️",
                             url=f"https://t.me/AAPLI_YAARI")
 
                 ]
@@ -291,7 +291,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**💥 𝐏𝐥𝐚𝐲 🔊 𝐌𝐮𝐬𝐢𝐜 💿 𝐋𝐞𝐬𝐬 ⚡️\n🤟 𝐓𝐡𝐚𝐧⚡️ {DURATION_LIMIT} 💞 𝐌𝐢𝐧𝐮𝐭𝐞 ...**"
+                f"** 𝙿𝙻𝙰𝚈 🔊 𝙼𝚄𝚂𝙸𝙲 𝙻𝙴𝚂𝚂⚡️\n🤟 𝚃𝙷𝙰𝙽⚡️ {DURATION_LIMIT} 𝙼𝙸𝙽𝚄𝚃𝙴**"
             )
             return
         requested_by = message.from_user.first_name
@@ -305,7 +305,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**💥 𝐍𝐎𝐁𝐈𝐓𝐀 🤞𝐀𝐝𝐝𝐞𝐝 💿 𝐒𝐨𝐧𝐠❗️\n🔊 𝐀𝐭 💞 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 » `{}` 🌷 ...**".format(position),
+            caption="**𝙽𝙾𝙱𝙸𝚃𝙰_𝚇𝙳🤞𝙰𝙳𝙳𝙴𝙳 💿 𝚂𝙾𝙽𝙶❗️\n🔊 𝙰𝚃 𝙿𝙾𝚂𝙸𝚃𝙸𝙾𝙽 » `{}` 🌷 ...**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -322,7 +322,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**💥 𝐍𝐎𝐁𝐈𝐓𝐀🤞𝐌𝐮𝐬𝐢𝐜 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐩 🥀 ...**".format(),
+            caption="**𝙽𝙾𝙱𝙸𝚃𝙰🤞𝙼𝚄𝚂𝙸𝙲 🎸 𝙽𝙾𝚆 \n🔊 𝙿𝙻𝙰𝚈𝙸𝙽𝙶 😍 𝙾𝙿...**".format(),
            )
 
     os.remove("final.png")
@@ -336,7 +336,7 @@ async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/1a85ce935e13e92706907.jpg", 
-                             caption="**💥 𝐍𝐎𝐁𝐈𝐓𝐀 🔈 𝐌𝐮𝐬𝐢𝐜🤞𝐍𝐨𝐰 🥀\n▶️ 𝐏𝐚𝐮𝐬𝐞𝐝 🌷 ...**"
+                             caption="**𝙽𝙾𝙱𝙸𝚃𝙰 𝙼𝚄𝚂𝙸𝙲🤞𝙽𝙾𝚆 🥀\n▶️ 𝙿𝙰𝚄𝚂𝙴𝙳 🌷 ...**"
     )
 
 
