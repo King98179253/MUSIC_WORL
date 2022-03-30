@@ -246,7 +246,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "**𝑮𝒊𝒗𝒆 𝑴𝒖𝒔𝒊𝒄 𝑵𝒂𝒎𝒆\n𝑻𝒐 𝑷𝒍𝒂𝒚...**"
             )
-        await lel.edit("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓𝐍▓𝐀▓𝐕▓𝐘▓𝐀▓ 100%**")
+        await lel.edit("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓𝐍▓𝐎▓𝐁▓𝐈▓𝐓▓𝐀▓ 100%**")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
