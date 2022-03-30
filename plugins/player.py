@@ -213,7 +213,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/AAPLI_YAARI
+                            url=f"https://t.me/AAPLI_YAARI")
                 ]
             ]
         )
